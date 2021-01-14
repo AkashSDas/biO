@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap");
+
+:root {
+  --card-shadow: 4px 4px 40px rgba(0, 0, 0, 0.25);
+  --font-body: "Montserrat";
+  --font-head: "Montserrat";
+  --purple: #410083;
+  --darkBlue: #492cff;
+  --blue: #4b9efd;
+  --puprle-linear-gradient: linear-gradient(
+      180deg,
+      rgba(82, 88, 245, 0) 0%,
+      #966bf2 100%
+    )
+    var(--purple) fixed;
+  --blue-linear-graident: linear-gradient(
+      261.7deg,
+      rgba(0, 147, 253, 0) 19.53%,
+      #00c2ff 98.69%
+    ),
+    #2f69ff;
+  --form-linear-gradient: linear-gradient(
+      261.7deg,
+      #00c2ff 0%,
+      rgba(0, 147, 253, 0) 98.69%
+    ),
+    #2f69ff;
+  --submit-btn-linear-gradient: linear-gradient(
+      261.7deg,
+      #bd00ff 0%,
+      rgba(202, 0, 253, 0) 98.69%
+    ),
+    #a32fff;
+}
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--puprle-linear-gradient);
+  transition: all 0.3s ease;
+  font-family: var(--font-body);
+  // padding-bottom: 5rem;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

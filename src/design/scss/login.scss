@@ -1,0 +1,120 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login .logo {
+  .small {
+    font-size: 5rem;
+  }
+
+  .big {
+    font-size: 6.6rem;
+  }
+}
+
+.login .description {
+  margin: 5rem auto;
+  font-size: 2.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  span {
+    margin-right: 1.8rem;
+  }
+
+  img {
+    height: 6rem;
+    width: 6rem;
+    margin-right: 1.8rem;
+  }
+}
+
+.login .sign-in-btn {
+  width: 24rem;
+  height: 4.6rem;
+  background: var(--blue);
+  border-radius: 60px;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: 2rem;
+  }
+
+  span {
+    margin-left: 1rem;
+    font-weight: 200;
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .login {
+    .logo {
+      font-size: 4rem;
+    }
+
+    .description {
+      span,
+      img {
+        margin-right: 1rem;
+      }
+
+      span {
+        font-size: 1.8rem;
+      }
+
+      img {
+        height: 4rem;
+        width: 4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .login {
+    .logo {
+      font-size: 3.6rem;
+    }
+
+    .sign-in-btn {
+      width: 20rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .login {
+    .logo {
+      font-size: 3rem;
+    }
+
+    .description {
+      span,
+      img {
+        margin-right: 0.6rem;
+      }
+
+      span {
+        font-size: 1.4rem;
+      }
+    }
+
+    .sign-in-btn {
+      width: 18rem;
+    }
+  }
+}

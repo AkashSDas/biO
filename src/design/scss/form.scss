@@ -1,0 +1,112 @@
+.add-or-edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+  margin-top: 2rem;
+}
+
+.add-or-edit-form .form {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .form-group {
+    margin-bottom: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+
+    input,
+    button {
+      outline: none;
+    }
+
+    label {
+      font-weight: 700;
+      font-size: 0.9rem;
+      align-self: start;
+      margin-bottom: 0.4rem;
+      margin-left: 0.8rem;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: rgb(180, 203, 211);
+      font-family: var(--font-body);
+    }
+
+    input[type="text"],
+    textarea,
+    input[type="date"],
+    input[type="file"] {
+      font-family: var(--font-body);
+      border: none;
+      border-radius: 40px;
+      color: white;
+      background: var(--form-linear-gradient);
+      padding: 1.2rem 0.8rem;
+      box-shadow: var(--card-shadow);
+      border: 2px solid var(--purple);
+    }
+
+    input {
+      width: 100%;
+    }
+
+    textarea {
+      height: 10rem;
+      width: 100%;
+      border-radius: 20px;
+      outline: none;
+    }
+  }
+
+  button[type="submit"] {
+    width: 35%;
+    background: var(--submit-btn-linear-gradient);
+    box-shadow: var(--card-shadow);
+    border: none;
+    border-radius: 60px;
+    padding: 0.8rem;
+    color: white;
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .add-or-edit-form .form {
+    .form-group,
+    button[type="submit"] {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .add-or-edit-form .form {
+    .form-group,
+    button[type="submit"] {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .add-or-edit-form .form {
+    .form-group,
+    button[type="submit"] {
+      width: 95%;
+    }
+  }
+}

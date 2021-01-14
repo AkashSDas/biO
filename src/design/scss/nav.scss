@@ -1,0 +1,72 @@
+.nav {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.nav .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.nav .navbar-nav .nav-item .logo {
+  .small {
+    font-size: 2rem;
+  }
+
+  .big {
+    font-size: 2.6rem;
+  }
+}
+
+.nav .navbar-nav .action-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .nav-item {
+    background: var(--darkBlue);
+    margin: auto 1rem;
+    border-radius: 50%;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // for link
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-icon,
+  .plus-icon {
+    height: 2.2rem;
+    width: 2.2rem;
+    padding: 0.5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nav .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 0.6rem;
+
+    .action-icons .nav-item {
+      margin: auto 0.4rem;
+    }
+  }
+}
